@@ -1,10 +1,67 @@
 <!doctype html>
 <html lang="el">
 <head>
-  <meta charset="utf-8">
-  <title>Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Δεν ξέρεις τι έχει το φυτό σου; Ρώτησέ το εδώ δωρεάν</title>
+  <meta name="description" content="Περιέγραψε το πρόβλημα ή στείλε φωτογραφία και ο ψηφιακός γεωπονικός βοηθός θα σου πει τι πιθανότατα συμβαίνει." />
+
+  <meta property="og:title" content="Ρώτα τον γεωπονικό βοηθό (δωρεάν)" />
+  <meta property="og:description" content="Περιέγραψε το πρόβλημα ή στείλε φωτογραφία και πάρε καθοδήγηση." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Το site δουλεύει</h1>
+  <main class="container">
+    <header class="hero">
+      <h1>Δεν ξέρεις τι έχει το φυτό σου; Ρώτησέ το εδώ δωρεάν</h1>
+      <p class="subtitle">
+        Περιέγραψε το πρόβλημα (ή στείλε φωτογραφία) και ο ψηφιακός γεωπονικός βοηθός θα σου πει τι <em>πιθανότατα</em> συμβαίνει και τι να προσέξεις.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://chatgpt.com/g/g-697a00cc10dc8191bb6da21a9766c727-geoponikos-boethos" target="_blank" rel="noopener">
+          Ξεκίνα το chat (Free)
+        </a>
+        <a class="btn secondary" href="https://chatgpt.com/g/g-697a6b6bdd988191aa1de0e6e87cf0f8-geoponikos-boethos-pro" target="_blank" rel="noopener">
+          Pro έκδοση
+        </a>
+      </div>
+
+      <p class="micro">
+        *Η καθοδήγηση είναι ενημερωτική και δεν αντικαθιστά επί τόπου αξιολόγηση από ειδικό.
+      </p>
+    </header>
+
+    <section class="how">
+      <h2>Πώς δουλεύει</h2>
+      <ul>
+        <li>Γράφεις τι παρατηρείς (π.χ. κηλίδες, κιτρίνισμα, έντομα).</li>
+        <li>Ο βοηθός σε ρωτά 2–3 ερωτήσεις για να καταλάβει καλύτερα.</li>
+        <li>Παίρνεις καθοδήγηση και επόμενα βήματα.</li>
+      </ul>
+    </section>
+
+    <section class="examples">
+      <h2>Παραδείγματα</h2>
+      <div class="chips">
+        <span>«Μαύρα στίγματα στα φύλλα ελιάς»</span>
+        <span>«Κιτρίνισαν τα φύλλα ντομάτας»</span>
+        <span>«Άσπρη σκόνη στα φύλλα αμπελιού»</span>
+        <span>«Τρύπες στα φύλλα λεμονιάς»</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> Agronomy Assistant</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
